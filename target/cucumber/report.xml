@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="50.572">
+    <testcase classname="Automate Yahoo site" name="Login Yahoo page" time="14.242">
+        <system-out><![CDATA[Given Open the browser and launch the application...........................passed
+When Enter the Username and Password from excel file test-data 0............passed
+Then User is able to login successfully.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Automate Yahoo site" name="Access Calendar" time="36.146">
+        <system-out><![CDATA[Given User is on Yahoo Home Page............................................passed
+When User selects Finance / Market Data/ Calendar...........................passed
+Then capture the values for the 27th August.................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

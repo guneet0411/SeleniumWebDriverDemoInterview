@@ -1,0 +1,157 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-27T19:42:55.716Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3448705000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Steps.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Login Yahoo page",
+        "description": "",
+        "id": "automate-yahoo-site;login-yahoo-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 199620000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Steps.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5888390000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open the browser and launch the application",
+            "match": {
+              "location": "stepDefinitions.Steps.launchApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4613614000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter the Username and Password from excel file test-data 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 58
+                }
+              ],
+              "location": "stepDefinitions.Steps.enter_credentials_from_excel_file(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27905000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is able to login successfully",
+            "match": {
+              "location": "stepDefinitions.Steps.user_is_able_to_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-27T19:43:09.969Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1694352000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Steps.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Access Calendar",
+        "description": "",
+        "id": "automate-yahoo-site;access-calendar",
+        "after": [
+          {
+            "result": {
+              "duration": 338492000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Steps.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10695150000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is on Yahoo Home Page",
+            "match": {
+              "location": "stepDefinitions.Steps.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22586675000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User selects Finance / Market Data/ Calendar",
+            "match": {
+              "location": "stepDefinitions.Steps.user_selects_calendar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 824610000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "capture the values for the 27th August",
+            "match": {
+              "location": "stepDefinitions.Steps.capture_values()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Automate Yahoo site",
+    "description": "",
+    "id": "automate-yahoo-site",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/functionalTests/Login.feature",
+    "tags": []
+  }
+]
