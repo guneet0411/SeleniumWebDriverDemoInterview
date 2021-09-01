@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-27T19:42:55.716Z",
+        "start_timestamp": "2021-09-01T21:15:25.079Z",
         "before": [
           {
             "result": {
-              "duration": 3448705000,
+              "duration": 5275585000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 199620000,
+              "duration": 336710000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5888390000,
+              "duration": 6830546000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 4613614000,
+              "duration": 6068779000,
               "status": "passed"
             },
             "line": 6,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 27905000,
+              "duration": 18285000,
               "status": "passed"
             },
             "line": 7,
@@ -78,11 +78,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-27T19:43:09.969Z",
+        "start_timestamp": "2021-09-01T21:15:43.712Z",
         "before": [
           {
             "result": {
-              "duration": 1694352000,
+              "duration": 1632437000,
               "status": "passed"
             },
             "match": {
@@ -97,7 +97,7 @@
         "after": [
           {
             "result": {
-              "duration": 338492000,
+              "duration": 361969000,
               "status": "passed"
             },
             "match": {
@@ -110,7 +110,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10695150000,
+              "duration": 10612964000,
               "status": "passed"
             },
             "line": 15,
@@ -122,8 +122,9 @@
           },
           {
             "result": {
-              "duration": 22586675000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"Object.getClass()\" because \"obj\" is null\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:560)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)\n\tat pageObjects.FinancePage.choose_calendar_link_from_businessData(FinancePage.java:36)\n\tat stepDefinitions.Steps.user_selects_calendar(Steps.java:79)\n\tat ✽.User selects Finance / Market Data/ Calendar(file:///Users/guneetkaur/git/repository/SeleniumWebDriverDemoInterview/src/test/resources/functionalTests/Login.feature:16)\n",
+              "duration": 56109704000,
+              "status": "failed"
             },
             "line": 16,
             "name": "User selects Finance / Market Data/ Calendar",
@@ -134,8 +135,8 @@
           },
           {
             "result": {
-              "duration": 824610000,
-              "status": "passed"
+              "duration": 1029000,
+              "status": "skipped"
             },
             "line": 17,
             "name": "capture the values for the 27th August",

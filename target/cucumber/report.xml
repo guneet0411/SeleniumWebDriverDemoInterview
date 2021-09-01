@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="50.572">
-    <testcase classname="Automate Yahoo site" name="Login Yahoo page" time="14.242">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="87.603">
+    <testcase classname="Automate Yahoo site" name="Login Yahoo page" time="18.614">
         <system-out><![CDATA[Given Open the browser and launch the application...........................passed
 When Enter the Username and Password from excel file test-data 0............passed
 Then User is able to login successfully.....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Automate Yahoo site" name="Access Calendar" time="36.146">
-        <system-out><![CDATA[Given User is on Yahoo Home Page............................................passed
-When User selects Finance / Market Data/ Calendar...........................passed
-Then capture the values for the 27th August.................................passed
-]]></system-out>
+    <testcase classname="Automate Yahoo site" name="Access Calendar" time="68.744">
+        <failure message="Cannot invoke &quot;Object.getClass()&quot; because &quot;obj&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given User is on Yahoo Home Page............................................passed
+When User selects Finance / Market Data/ Calendar...........................failed
+Then capture the values for the 27th August.................................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "obj" is null
+	at java.base/java.lang.reflect.Method.invoke(Method.java:560)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at pageObjects.FinancePage.choose_calendar_link_from_businessData(FinancePage.java:36)
+	at stepDefinitions.Steps.user_selects_calendar(Steps.java:79)
+	at ✽.User selects Finance / Market Data/ Calendar(file:///Users/guneetkaur/git/repository/SeleniumWebDriverDemoInterview/src/test/resources/functionalTests/Login.feature:16)
+]]></failure>
     </testcase>
 </testsuite>
